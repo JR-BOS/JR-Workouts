@@ -9,42 +9,223 @@
       href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
     <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <a href="#" id="nav-logo"><img src="images/logo.png" alt="" /></a>
-        </div>
-        <div class="navbar-toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="" width="150" />
+        </a>
 
-        <ul class="navbar-menu">
-          <li class="navbar-item">
-            <a class="navbar-links" id="home-page" href="#home">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-links" id="about-page" href="#about">Over Mij</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-links" id="PT-page" href="#services">Training</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-links" id="video-page" href="#history">Video's</a>
-          </li>
-          <li class="navbar-item">
-            <a class="navbar-links" id="contact-page" href="#contact"
-              >Contact</a
-            >
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about">Over mij</a>
+            <a class="nav-link" href="#personaltraining">Personal Training</a>
+            <a class="nav-link" href="#videos">Video's</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
       </div>
     </nav>
+    <!-- Landing page section -->
+    <section id="home" class="home">
+      <!-- <div class="home-content">
+          <img src="images/slider1.jpg">  
+        </div>
+      </section> -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide home-content"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="images/slider1.jpg" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="images/slider2.jpeg" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="images/slider3.jpg" class="d-block" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1 class="headline">Ga jij de uitdaging aan?</h1>
+      <a type="button" href="#about" class="btn btn-light homebutton">
+        <i class="fas fa-medal"></i> Start hier!
+      </a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col"><img src="images/Joost.jpg" alt="" /></div>
+          <div class="col">
+            <h1>JR Workouts</h1>
+            <p>
+              Welkom op de website van JR Workouts. Mijn naam is Joost Ravesloot
+              (24) , en bij mij ben je aan het juiste adres als je op zoek bent
+              naar een deskundige personal trainer! Ik help je graag bij het
+              behalen van je persoonlijke en fysieke doelen.
+            </p>
+            <p>
+              Ook verzorg ik groepslessen voor zowel particuliere groepen als
+              voor bedrijven welke variëren van circuittrainingen tot
+              bokslessen. Deze lessen verzorg ik momenteel in Apeldoorn en
+              omgeving, maar in overleg is er natuurlijk veel mogelijk!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PT Section -->
+
+    <section class="personaltraining" id="personaltraining">
+      <div class="container">
+        <h1>Personal Training</h1>
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/Joost.jpg"
+                height="300"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Ik beschik over de juiste diploma's, kwalificaties en kennis
+                  om jou op weg te helpen om jezelf te verbeteren.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/food.jpeg"
+                height="300"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Het eten van de juiste voeding is van essentieel belang voor
+                  elke sporter, welk doel je ook hebt. Ik help je bij het
+                  samenstelling van een voedingsschema dat aansluit op jouw
+                  doel.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/gloves.jpeg"
+                height="300"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Uiteraard heb je de beschikking over de juiste fitness
+                  uitrusting die de work-out een stuk effectiever maakt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                src="images/advice.jpeg"
+                height="300"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Iedereen heeft een uniek lichaam en doel Dit betekent dat
+                  iedereen een andere benadering nodig heeft. Ik zorg voor een
+                  training/voedingsschema dat perfect aansluit bij jou!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navbar Section -->
+
+    <footer>JR Workouts</footer>
     <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
