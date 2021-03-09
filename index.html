@@ -37,12 +37,14 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            <a class="nav-link" href="#about">Over mij</a>
+            <a class="nav-link" href="#about">Over Mij</a>
             <a class="nav-link" href="#personaltraining">Personal Training</a>
-            <a class="nav-link" href="#videos">Video's</a>
             <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
@@ -136,6 +138,9 @@
               bokslessen. Deze lessen verzorg ik momenteel in Apeldoorn en
               omgeving, maar in overleg is er natuurlijk veel mogelijk!
             </p>
+            <a href="#contact" type="button" class="btn btn-dark"
+              >Neem contact op</a
+            >
           </div>
         </div>
       </div>
@@ -219,7 +224,90 @@
     </section>
 
     <!-- Navbar Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="heading text-center">
+          <h1>Neem contact op!</h1>
+          <p>Neem gerust contact op bij vragen en/of opmerkingen.<br /></p>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="title">
+              <h3>Contact details</h3>
+            </div>
+            <div class="content">
+              <!-- Info-1 -->
+              <div class="info">
+                <i class="fas fa-mobile-alt"></i>
+                <h4 class="d-inline-block">
+                  Telefoon :
+                  <br />
+                  <span>06 51638684</span>
+                </h4>
+              </div>
+              <!-- Info-2 -->
+              <div class="info">
+                <i class="far fa-envelope"></i>
+                <h4 class="d-inline-block">
+                  EMAIL :
+                  <br />
+                  <span>Joostravesloot@live.nl</span>
+                </h4>
+              </div>
+              <!-- Info-3 -->
+              <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4 class="d-inline-block">
+                  ADRES :<br />
+                  <span>Koningspage 96, 7361ZX Beekbergen</span>
+                </h4>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-md-7">
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Naam"
+                    required
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="col-sm-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Onderwerp"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  id="comment"
+                  placeholder="Bericht"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn-block" type="submit">Verzenden</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>JR Workouts</footer>
     <script src="script.js"></script>
     <script
