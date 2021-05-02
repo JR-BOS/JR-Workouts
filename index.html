@@ -10,310 +10,282 @@
       rel="stylesheet"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
       rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
     />
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
     <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="" width="150" />
+          <img src="images/whitejr.png" height="45" alt="" loading="lazy" />
         </a>
-
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
         <div
           class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
+          id="navbarNav"
         >
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            <a class="nav-link" href="#about">Over Mij</a>
-            <a class="nav-link" href="#personaltraining">Personal Training</a>
-            <a class="nav-link" href="#contact">Contact</a>
-          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Over mij</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Personal Training</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <div class="nav-link">
+              <a
+                href="https://www.instagram.com/cafedeheksenketel/"
+                target="_blank"
+                class="socialicon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/HeksenketelBeekbergen"
+                target="_blank"
+                class="socialicon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/HeksenketelBeekbergen"
+                target="_blank"
+                class="socialicon"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </ul>
         </div>
       </div>
     </nav>
+
+    <div id="overlay"></div>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <img src="images/slider1.jpg" />
+        <h1 class="headline2">JR Workouts</h1>
+        <h1 class="headline">Ga jij de uitdaging aan?</h1>
+        <a href="#about" class="homebutton"
+          ><i class="fas fa-chevron-circle-down test"></i
+        ></a>
+      </div>
+    </section>
     <!-- Landing page section -->
-    <section id="home" class="home">
-      <!-- <div class="home-content">
-          <img src="images/slider1.jpg">  
-        </div>
-      </section> -->
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide home-content"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img src="images/slider1.jpg" class="d-block" alt="..." />
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="images/slider2.jpeg" class="d-block" alt="..." />
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="images/slider3.jpg" class="d-block" alt="..." />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <h1 class="headline">Ga jij de uitdaging aan?</h1>
-      <a type="button" href="#about" class="btn btn-light homebutton">
-        <i class="fas fa-medal"></i> Start hier!
-      </a>
-    </section>
 
-    <!-- About Me -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col"><img src="images/Joost.jpg" alt="" /></div>
-          <div class="col">
-            <h1>JR Workouts</h1>
-            <p>
-              Welkom op de website van JR Workouts. Mijn naam is Joost Ravesloot
-              (24) , en bij mij ben je aan het juiste adres als je op zoek bent
-              naar een deskundige personal trainer! Ik help je graag bij het
-              behalen van je persoonlijke en fysieke doelen.
-            </p>
-            <p>
-              Ook verzorg ik groepslessen voor zowel particuliere groepen als
-              voor bedrijven welke variëren van circuittrainingen tot
-              bokslessen. Deze lessen verzorg ik momenteel in Apeldoorn en
-              omgeving, maar in overleg is er natuurlijk veel mogelijk!
-            </p>
-            <a href="#contact" type="button" class="btn btn-dark"
-              >Neem contact op</a
-            >
+    <section class="about">
+      <div class="row">
+        <div class="col-md-5 illustration">
+          <div>
+            <img id="fitness" src="images/pt.svg" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 links">
+          <h3>JR Workouts</h3>
+
+          <p>
+            Welkom op de website van JR Workouts. Mijn naam is Joost Ravesloot
+            (24) , en bij mij ben je aan het juiste adres als je op zoek bent
+            naar een deskundige personal trainer! Ik help je graag bij het
+            behalen van je persoonlijke en fysieke doelen.
+          </p>
+          <button type="button" class="btn btn-primary">Contact</button>
+        </div>
+
+        <div class="col-md-3">
+          <div class="profiel">
+            <div class="plaatje">
+              <img src="images/circle-cropped.png" width="250" alt="" />
+            </div>
+            <div class="titel">
+              <h3>Joost Ravesloot</h3>
+              <h5>Personal Trainer</h5>
+            </div>
+          </div>
+          <div class="socials">
+            <div class="facebook">
+              <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+            </div>
+            <div class="insta">
+              <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="youtube">
+              <a href=""><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- services -->
+    <div class="services">
+      <div class="feat bg-gray pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <div class="item">
+                <span class="icon feature_box_col_one"
+                  ><i class="fas fa-dumbbell"></i
+                ></span>
+                <h6>Personal Training</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor Aenean massa.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="item">
+                <span class="icon feature_box_col_two"
+                  ><i class="fas fa-trophy"></i
+                ></span>
+                <h6>Bootcamps</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor Aenean massa.
+                </p>
+              </div>
+            </div>
 
-    <!-- PT Section -->
-
-    <section class="personaltraining" id="personaltraining">
-      <div class="container">
-        <h1>Personal Training</h1>
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/Joost.jpg"
-                height="300"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Ik beschik over de juiste diploma's, kwalificaties en kennis
-                  om jou op weg te helpen om jezelf te verbeteren.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/food.jpeg"
-                height="300"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Het eten van de juiste voeding is van essentieel belang voor
-                  elke sporter, welk doel je ook hebt. Ik help je bij het
-                  samenstelling van een voedingsschema dat aansluit op jouw
-                  doel.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/gloves.jpeg"
-                height="300"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Uiteraard heb je de beschikking over de juiste fitness
-                  uitrusting die de work-out een stuk effectiever maakt.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img
-                src="images/advice.jpeg"
-                height="300"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Iedereen heeft een uniek lichaam en doel Dit betekent dat
-                  iedereen een andere benadering nodig heeft. Ik zorg voor een
-                  training/voedingsschema dat perfect aansluit bij jou!
+            <div class="col-lg-4 col-sm-6">
+              <div class="item">
+                <span class="icon feature_box_col_three"
+                  ><i class="fas fa-info-circle"></i
+                ></span>
+                <h6>En meer..</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor Aenean massa.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Navbar Section -->
-    <section class="contact" id="contact">
+    <!-- contact -->
+
+    <section id="contact" class="contact">
       <div class="container">
-        <div class="heading text-center">
-          <h1>Neem contact op!</h1>
-          <p>Neem gerust contact op bij vragen en/of opmerkingen.<br /></p>
-        </div>
-        <div class="row">
-          <div class="col-md-5">
-            <div class="title">
-              <h3>Contact details</h3>
-            </div>
-            <div class="content">
-              <!-- Info-1 -->
-              <div class="info">
-                <i class="fas fa-mobile-alt"></i>
-                <h4 class="d-inline-block">
-                  Telefoon :
-                  <br />
-                  <span>06 51638684</span>
-                </h4>
-              </div>
-              <!-- Info-2 -->
-              <div class="info">
-                <i class="far fa-envelope"></i>
-                <h4 class="d-inline-block">
-                  EMAIL :
-                  <br />
-                  <span>Joostravesloot@live.nl</span>
-                </h4>
-              </div>
-              <!-- Info-3 -->
-              <div class="info">
-                <i class="fas fa-map-marker-alt"></i>
-                <h4 class="d-inline-block">
-                  ADRES :<br />
-                  <span>Koningspage 96, 7361ZX Beekbergen</span>
-                </h4>
-              </div>
-            </div>
-          </div>
+        <h1 class="abouttitle">Contact</h1>
 
-          <div class="col-md-7">
-            <form>
-              <div class="row">
-                <div class="col-sm-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Naam"
-                    required
-                  />
-                </div>
-                <div class="col-sm-6">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Onderwerp"
-                    required
-                  />
+        <div class="row">
+          <div class="col-sm">
+            <div class="icons">
+              <div class="contactrow">
+                <i class="fa fa-user"></i>
+                <div class="info">
+                  <div class="head">Naam</div>
+                  <div class="sub-title">JR Workouts</div>
                 </div>
               </div>
-              <div class="form-group">
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  id="comment"
-                  placeholder="Bericht"
-                  required
-                ></textarea>
+
+              <div class="contactrow">
+                <i class="fa fa-phone"></i>
+                <div class="info">
+                  <div class="head">Telefoon</div>
+                  <div class="sub-title">06 51638684</div>
+                </div>
               </div>
-              <button class="btn btn-block" type="submit">Verzenden</button>
-            </form>
+
+              <div class="contactrow">
+                <i class="fa fa-map-marker-alt"></i>
+                <div class="info">
+                  <div class="head">Adres</div>
+                  <div class="sub-title">Koningspage 96, Beekbergen</div>
+                </div>
+              </div>
+
+              <div class="contactrow">
+                <i class="fa fa-envelope"></i>
+                <div class="info">
+                  <div class="head">Email</div>
+                  <div class="sub-title">Joostravesloot@live.nl</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <img id="contactimg" src="images/contact.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <footer>JR Workouts</footer>
+
+    <!-- footer -->
+
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3 class="hekslettertype">Menu</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Over Mij</a></li>
+                <li><a href="#menukaart">Personal Training</a></li>
+                <li><a href="#evenementen">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3 class="hekslettertype">Contactgegevens</h3>
+              <ul>
+                <li><a href="#">Koningspage 96, Beekbergen</a></li>
+                <li><a href="#">06 51638684</a></li>
+                <li><a href="#">Joostravesloot@live.nl</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 item text">
+              <h3 class="hekslettertype">JR Workouts</h3>
+              <p>
+                Bij JR Workouts ben je aan het juiste adres als je op zoek bent
+                naar een deskundige personal trainer! Ik help je graag bij het
+                behalen van je persoonlijke en fysieke doelen.
+              </p>
+            </div>
+            <div class="col item social">
+              <a
+                href="https://www.instagram.com/cafedeheksenketel/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i></a
+              ><a
+                href="https://www.facebook.com/HeksenketelBeekbergen"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/HeksenketelBeekbergen"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <p class="copyright">JR Workouts © 2021</p>
+        </div>
+      </footer>
+    </div>
+
     <script src="script.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
     ></script>
   </body>
 </html>
