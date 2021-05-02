@@ -141,17 +141,21 @@ footer {
 
 .about .links {
   border-right: solid 30px #152238;
-  padding-top: 100px;
+  padding-top: 140px;
   padding-right: 50px;
 }
 
 .about .illustration {
   padding-left: 50px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .about #fitness {
   width: 450px;
+}
+
+.about #naam {
+  padding-top: 30px;
 }
 
 .facebook a {
@@ -176,7 +180,11 @@ footer {
 }
 
 .profiel {
-  padding-top: 50px;
+  padding-top: 100px;
+}
+
+.navbar-toggler {
+  color: white !important;
 }
 
 /* FOOTER SECTION */
@@ -287,6 +295,11 @@ footer {
   }
 }
 
+.services,
+.contact {
+  padding: 100px 0;
+}
+
 .services .card {
   width: 500px;
   height: 500px;
@@ -295,6 +308,14 @@ footer {
   background: #152238;
   color: white;
   text-align: center;
+}
+
+.dienstentitle {
+  color: white;
+}
+
+.contacttitle {
+  padding-bottom: 50px;
 }
 
 /* SERVICES */

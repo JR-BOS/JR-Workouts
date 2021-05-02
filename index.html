@@ -40,32 +40,32 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Over mij</a>
+              <a class="nav-link" href="#about">Over mij</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Personal Training</a>
+              <a class="nav-link" href="#services">Personal Training</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <div class="nav-link">
               <a
-                href="https://www.instagram.com/cafedeheksenketel/"
+                href="https://www.instagram.com/jrworkouts1/"
                 target="_blank"
                 class="socialicon"
                 ><i class="fab fa-instagram"></i
               ></a>
               <a
-                href="https://www.facebook.com/HeksenketelBeekbergen"
+                href="https://www.facebook.com/jrworkouts1"
                 target="_blank"
                 class="socialicon"
                 ><i class="fab fa-facebook-f"></i
               ></a>
               <a
-                href="https://www.facebook.com/HeksenketelBeekbergen"
+                href="https://www.youtube.com/channel/UCNVQ8Ee9DBQGsExHcvuskug"
                 target="_blank"
                 class="socialicon"
                 ><i class="fab fa-youtube"></i
@@ -75,9 +75,7 @@
         </div>
       </div>
     </nav>
-
-    <div id="overlay"></div>
-
+    <!-- HOME -->
     <section class="home" id="home">
       <div class="home-content">
         <img src="images/slider1.jpg" />
@@ -90,7 +88,7 @@
     </section>
     <!-- Landing page section -->
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="row">
         <div class="col-md-5 illustration">
           <div>
@@ -106,7 +104,7 @@
             naar een deskundige personal trainer! Ik help je graag bij het
             behalen van je persoonlijke en fysieke doelen.
           </p>
-          <button type="button" class="btn btn-primary">Contact</button>
+          <a type="button" href="#contact" class="btn btn-primary">Contact</a>
         </div>
 
         <div class="col-md-3">
@@ -115,26 +113,35 @@
               <img src="images/circle-cropped.png" width="250" alt="" />
             </div>
             <div class="titel">
-              <h3>Joost Ravesloot</h3>
+              <h3 id="naam">Joost Ravesloot</h3>
               <h5>Personal Trainer</h5>
             </div>
           </div>
           <div class="socials">
             <div class="facebook">
-              <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+              <a href="https://www.facebook.com/jrworkouts1" target="_blank"
+                ><i class="fab fa-facebook-f"></i> Facebook</a
+              >
             </div>
             <div class="insta">
-              <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+              <a href="https://www.instagram.com/jrworkouts1/" target="_blank"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
             </div>
             <div class="youtube">
-              <a href=""><i class="fab fa-youtube"></i> YouTube</a>
+              <a
+                href="https://www.youtube.com/channel/UCNVQ8Ee9DBQGsExHcvuskug"
+                target="_blank"
+                ><i class="fab fa-youtube"></i> YouTube</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- services -->
-    <div class="services">
+    <div class="services" id="services">
+      <h1 class="dienstentitle">Diensten</h1>
       <div class="feat bg-gray pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -145,8 +152,10 @@
                 ></span>
                 <h6>Personal Training</h6>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor Aenean massa.
+                  Ik help je graag met het behalen van je persoonlijke en
+                  fysieke doelen!<br />
+                  Ik beschik over de juiste diploma's en kennis om jou op weg te
+                  helpen om jezelf te verbeteren.
                 </p>
               </div>
             </div>
@@ -157,8 +166,10 @@
                 ></span>
                 <h6>Bootcamps</h6>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor Aenean massa.
+                  Naast personal training verzorg ik bootcamps en
+                  circuittrainingen voor particuliere groepen en bedrijven. Deze
+                  lessen verzorg ik momenteel in Apeldoorn en omgeving, maar in
+                  overleg is er natuurlijk veel mogelijk!
                 </p>
               </div>
             </div>
@@ -170,8 +181,10 @@
                 ></span>
                 <h6>En meer..</h6>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor Aenean massa.
+                  Bij mij kun je terecht voor personal training,
+                  circuittraining, bokslessen, en meer!<br /><br />
+                  Neem gerust contact op met mij om te bespreken wat er allemaal
+                  mogelijk is!
                 </p>
               </div>
             </div>
@@ -184,7 +197,7 @@
 
     <section id="contact" class="contact">
       <div class="container">
-        <h1 class="abouttitle">Contact</h1>
+        <h1 class="contacttitle">Contact</h1>
 
         <div class="row">
           <div class="col-sm">
@@ -193,7 +206,7 @@
                 <i class="fa fa-user"></i>
                 <div class="info">
                   <div class="head">Naam</div>
-                  <div class="sub-title">JR Workouts</div>
+                  <div class="sub-title">JR Workouts - Joost Ravesloot</div>
                 </div>
               </div>
 
@@ -201,7 +214,7 @@
                 <i class="fa fa-phone"></i>
                 <div class="info">
                   <div class="head">Telefoon</div>
-                  <div class="sub-title">06 51638684</div>
+                  <div class="sub-title">06 5163 8684</div>
                 </div>
               </div>
 
@@ -240,15 +253,15 @@
               <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Over Mij</a></li>
-                <li><a href="#menukaart">Personal Training</a></li>
-                <li><a href="#evenementen">Contact</a></li>
+                <li><a href="#services">Personal Training</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">
               <h3 class="hekslettertype">Contactgegevens</h3>
               <ul>
                 <li><a href="#">Koningspage 96, Beekbergen</a></li>
-                <li><a href="#">06 51638684</a></li>
+                <li><a href="#">06 5163 8684</a></li>
                 <li><a href="#">Joostravesloot@live.nl</a></li>
               </ul>
             </div>
@@ -261,17 +274,13 @@
               </p>
             </div>
             <div class="col item social">
-              <a
-                href="https://www.instagram.com/cafedeheksenketel/"
-                target="_blank"
+              <a href="https://www.instagram.com/jrworkouts1/" target="_blank"
                 ><i class="fab fa-instagram"></i></a
-              ><a
-                href="https://www.facebook.com/HeksenketelBeekbergen"
-                target="_blank"
+              ><a href="https://www.facebook.com/jrworkouts1" target="_blank"
                 ><i class="fab fa-facebook-f"></i
               ></a>
               <a
-                href="https://www.facebook.com/HeksenketelBeekbergen"
+                href="https://www.youtube.com/channel/UCNVQ8Ee9DBQGsExHcvuskug"
                 target="_blank"
                 ><i class="fab fa-youtube"></i
               ></a>
