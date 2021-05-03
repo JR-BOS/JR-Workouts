@@ -148,6 +148,7 @@ footer {
 .about .illustration {
   padding-left: 50px;
   padding-top: 100px;
+  text-align: center;
 }
 
 .about #fitness {
@@ -285,7 +286,7 @@ footer {
   }
 
   .headline {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -490,6 +491,10 @@ p.awesome_line {
   font-weight: bold;
 }
 
+.contact .contactpicca {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1200px) {
   .about #fitness {
     width: 350px;
@@ -506,12 +511,19 @@ p.awesome_line {
   }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 767px) {
   .about .links {
     border-right: none;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .profiel {
+    padding-top: 50px;
   }
 
   .contact #contactimg {
     width: 300px;
+    padding-top: 50px;
   }
 }
