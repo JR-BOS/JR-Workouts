@@ -510,4 +510,8 @@ p.awesome_line {
   .about .links {
     border-right: none;
   }
+
+  .contact #contactimg {
+    width: 300px;
+  }
 }
