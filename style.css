@@ -289,12 +289,6 @@ footer {
   }
 }
 
-@media only screen and (max-width: 920px) {
-  .about .col-sm {
-    width: 100% !important;
-  }
-}
-
 .services,
 .contact {
   padding: 100px 0;
@@ -408,7 +402,7 @@ p.awesome_line {
   transition: all 0.5s ease 0s;
 }
 .services .item:hover {
-  background: #f91942;
+  background: #add8e6;
   box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.5s ease 0;
   transition: all 0.5s ease 0;
@@ -424,7 +418,7 @@ p.awesome_line {
 }
 .services .item:hover h6,
 .services .item:hover p {
-  color: #fff;
+  /* color: #fff; */
   -webkit-transition: all 0.5s ease 0;
   transition: all 0.5s ease 0;
   transition: all 0.5s ease 0s;
@@ -432,7 +426,7 @@ p.awesome_line {
 .services .item .icon {
   font-size: 40px;
   margin-bottom: 25px;
-  color: #f91942;
+  color: #152238;
   width: 90px;
   height: 90px;
   line-height: 96px;
@@ -494,4 +488,26 @@ p.awesome_line {
 
 .contact .head {
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about #fitness {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about #fitness {
+    width: 300px;
+  }
+
+  .about .illustration {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .about .links {
+    border-right: none;
+  }
 }
