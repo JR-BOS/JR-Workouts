@@ -527,3 +527,9 @@ p.awesome_line {
     padding-top: 50px;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    background: #152238 !important;
+  }
+}
